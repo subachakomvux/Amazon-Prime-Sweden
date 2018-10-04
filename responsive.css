@@ -1,0 +1,19 @@
+*{
+    box-sizing:border-box;
+}
+.row{
+    max-width:1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:0 auto;
+}
+.row::after{
+content: "";/* creates empty space- skapar tom yta */
+clear: both; /* ger floated elements en rad sida vis sida*/ 
+display: table; /*ger en ny rad*/ 
+}
+
+.col-3, .col-4, .col-6, .col-8, .col-12{
+    float:left;
+    width:100%;
+}
